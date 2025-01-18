@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivDogImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/dog_image" />
+
+
+    <ImageButton
+        android:id="@+id/btnLike"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end"
+        android:paddingStart="14dp"
+        android:paddingEnd="0dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/heart"
+        android:contentDescription="@string/like_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|end">
+
+        <TextView
+            android:id="@+id/tvDogName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:text="@string/nombre_del_perro" />
+
+        <ImageButton
+            android:id="@+id/btnWhatsApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/whatsapp"
+            android:contentDescription="@string/whatsapp_button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDogAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/edad_del_perro" />
+
+    <TextView
+        android:id="@+id/tvDogLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/ubicaci_n_del_perro" />
+
+</LinearLayout>

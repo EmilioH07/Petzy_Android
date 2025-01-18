@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Imagen de la actividad -->
+    <FrameLayout
+        android:layout_width="340dp"
+        android:layout_height="170dp">
+        <ImageView
+            android:id="@+id/activityImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- Título de la actividad en la esquina superior derecha -->
+        <TextView
+            android:id="@+id/activityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom|end"
+            android:padding="8dp"
+            android:text="Actividad" />
+    </FrameLayout>
+
+</LinearLayout>

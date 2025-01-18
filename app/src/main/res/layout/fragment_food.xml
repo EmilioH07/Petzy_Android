@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inventario y gestion de comida"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginTop="40dp"/>
+
+        <!-- Contenedor de la barra de progreso -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="60dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <!-- Etiqueta de comida total restante -->
+                <TextView
+                    android:id="@+id/totalFoodLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Total de comida: 0.00 kg"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold" />
+
+                <!-- Barra de progreso para comida -->
+                <ProgressBar
+                    android:id="@+id/foodProgressBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/progress_bar_drawable"
+                    android:progress="50" />
+
+                <!-- Contenedor para los dos TextView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <!-- Texto sin ID, alineado al inicio -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textSize="14sp"
+                        android:textColor="#555555"
+                        android:layout_weight="1" />
+
+                    <!-- Texto con ID, alineado al final -->
+                    <TextView
+                        android:id="@+id/totalFoodAmountLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textSize="14sp"
+                        android:textColor="#555555" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Campo de entrada para cantidad de comida -->
+        <EditText
+            android:id="@+id/foodToFeedEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad en gramos"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <!-- Contenedor de botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center">
+
+            <!-- Botón para alimentar al perro -->
+            <Button
+                android:id="@+id/feedDogButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Alimentar"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Botón para agregar comida -->
+            <Button
+                android:id="@+id/addFoodButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Agregar"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

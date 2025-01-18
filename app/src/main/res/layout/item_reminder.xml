@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ejemplo de layout para el ítem del RecyclerView -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/reminderTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de recordatorio"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/reminderDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="14sp" />
+
+        <!-- Agregar más TextViews para otras propiedades -->
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear un nuevo recordatorio"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <!-- Tipo de Recordatorio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de recordatorio"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/reminderTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fecha -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccionar fecha"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Hora -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/timeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccionar hora"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Lugar/Responsable -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lugar/Responsable"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lugar o responsable"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Notas Adicionales -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notas adicionales"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/notesEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Escribe notas adicionales"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar recordatorio" />
+    </LinearLayout>
+</ScrollView>
+
+

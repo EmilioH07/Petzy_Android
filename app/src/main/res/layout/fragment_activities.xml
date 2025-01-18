@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Etiqueta para los lugares recomendados -->
+    <TextView
+        android:id="@+id/recommendedPlacesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugares recomendados para pasear"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- RecyclerView para mostrar los primeros elementos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"/>
+
+    <!-- Etiqueta para el segundo conjunto de lugares -->
+    <TextView
+        android:id="@+id/secondRecommendedPlacesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plazas comerciales Pet Friendly"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Segundo RecyclerView para mostrar los elementos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/secondActivityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>

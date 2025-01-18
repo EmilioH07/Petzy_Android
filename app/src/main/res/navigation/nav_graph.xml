@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/remindersFragment">
+
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.erha.dogsrf.Recordatorios.RemindersFragment"
+        android:label="fragment_reminders"
+        tools:layout="@layout/fragment_reminders">
+        <action
+            android:id="@+id/action_remindersFragment_to_addReminderFragment"
+            app:destination="@id/addReminderFragment" />
+        <action
+            android:id="@+id/action_remindersFragment_to_reminderDetailFragment"
+            app:destination="@id/reminderDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addReminderFragment"
+        android:name="com.erha.dogsrf.Recordatorios.AddReminderFragment"
+        android:label="fragment_add_reminder"
+        tools:layout="@layout/fragment_add_reminder" />
+
+    <fragment
+        android:id="@+id/reminderDetailFragment"
+        android:name="com.erha.dogsrf.Recordatorios.ReminderDetailFragment"
+        android:label="Reminder Detail"
+        tools:layout="@layout/fragment_reminder_detail" />
+
+</navigation>
